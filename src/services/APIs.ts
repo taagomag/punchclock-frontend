@@ -6,14 +6,14 @@ import Location from '../models/Location'
 import Category from '../models/Category'
 const API_URL = 'http://localhost:8081/';
 
-const getHeaders = () => {
-    const bearer = `Bearer ${localStorage.getItem('authToken')}`;
-    return store.getters.getIsCandidate ? {
-        authorization: bearer
-    } : {
-        authToken: bearer
-    };
-};
+// const getHeaders = () => {
+//     const bearer = `Bearer ${localStorage.getItem('authToken')}`;
+//     return store.getters.getIsLoggedIn ? {
+//         authorization: bearer
+//     } : {
+//         authToken: bearer
+//     };
+// };
 
 export default {
   getUsers() {
